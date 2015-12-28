@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+}
+
+/*Bootstrap Overrides*/
+.navbar {
+    margin-bottom: 0;
+}
+.navbar-inverse {
+    /*background-color: #52b6ac;
+    border-color: #4AA69D;*/
+    /*background-color: #FAFAFA;
+    border: 1px solid #D1D1D1;
+    box-shadow: 0px 3px 20px rgba(0, 141, 0, 0.35);*/
+
+    background-color: #fff;
+    border: 0px solid #D1D1D1;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+    height: 100px;
+}
+.navbar-inverse .navbar-brand {
+    color: #F2F2F2;
+}
+.navbar-inverse .navbar-nav>li>a {
+    /*color: #4d4b4b;*/
+}
+.navbar-left>li>a {
+    color: #fff;
+}
+.nav-tabs>li.active>a {
+    background-color: #4AA69D;
+    color: #fff;
+    border-color: #4AA69D;
+}
+
+/*Custom Styles*/
+.navbar-admin {
+    background : rgba(255, 255, 255, 1);
+    box-shadow : 0px 2.68px 1.79px rgba(0, 0, 0, 0.25);
+     filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=2.68, Color='#000000') ;
+    display: table;
+    height: 15px;
+    width: 100%;
+    overflow: visible;
+    z-index: 900;
+}
+
+.table {
+    /*width: 85%;*/
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+a, a:link, a:visited {
+    color: #6fc9c9;
+    font-weight: bold;
+    text-decoration: none;
+    /*text-shadow: 0px 1px 0px #ddf;*/
+}
+
+.main-container {
+    margin-top: 101px;
+}
+.landscape{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.playstr {
+    background: url("https://s3.amazonaws.com/prod.justbooksclc.com/summer_app/button.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 57px;
+    margin: 50px 0;
+    width: 194px;
+    text-align: left;
+}
+/*.landing-text {
+    font-family: vegurlight;
+    font-size: 15px;
+    line-height: 0;
+    text-align: left;
+    margin-left: -5px;
+}*/
+.send-app-link {
+    /*border-bottom: 1px solid #837E7C;*/
+
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: left;
+    margin-left: -10px;
+}
+.send-app-link form{
+  float: left;
+}
+
+.invalid {
+    height: 45px;
+    opacity: 0.6;
+    padding: 0 1px 6px;
+    width: 300px;
+    text-align: left;
+}
+.btn.secondary {
+    background: none repeat scroll 0 0 #ff9800;
+    color: #000;
+    height: 45px;
+    font-family: vegur;
+    margin-left: 10px;
+}
+.logo {
+    margin: 25px 0 0px 210px !important;
+    width: 30%;
+}
+.catamaran {
+    font-family : catamaran;
+     font-size : 16px;
+     color : #4D4D4D;
+     color : rgb(77, 77, 77);
+}
+.container {
+    font-family : catamaran;
+    font-size : 16px;
+    color : #4D4D4D;
+    color : rgb(77, 77, 77);
+}
+
+#slideshow img {
+    display: none;
+}

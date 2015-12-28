@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link href='https://fonts.googleapis.com/css?family=Catamaran:400,300' rel='stylesheet' type='text/css'>
+
+        <title>Firstmyle</title>
+        <%= stylesheet_link_tag    "application", :media => "all" %>
+        <%= javascript_include_tag "application" %>
+        <%= csrf_meta_tags %>
+
+        <script type="text/javascript">
+        $(document).ready(function(){
+          setTimeout(function(){
+            $('#flash').remove();
+          }, 5000);
+         })
+        </script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <%= link_to image_tag("logo.png", :border => 0, :class => "logo"), root_path %>
+            </div>
+          </div>
+        </nav>
+
+        <div class="container main-container">
+          <div class="row">
+            <div class="col-lg-2"></div>
+
+            <div class="col-lg-8">
+              <div class="row">
+                <div id="flash" class="col-lg-8">
+                  <center>
+                    <% unless flash.now[:notice].blank? %>
+                        <div class="alert alert-success"><%= flash.now[:notice] %></div>
+                    <% end %>
+                    <% unless flash.now[:error].blank? %>
+                        <div class="alert alert-danger"><%= flash.now[:error] %></div>
+                    <% end %>
+                  </center>
+                </div>
+              </div>
+              <div class= "row">
+                <div class="col catamaran">
+                  <%= yield %>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2"></div>
+          </div>
+        </div>
+
+
+        <!-- jQuery Version 1.11.1 -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
