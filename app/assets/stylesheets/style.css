@@ -131,10 +131,10 @@ a, a:link, a:visited {
     position:absolute;
     -webkit-animation-name: fade;
     -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 6s;
+    -webkit-animation-duration: 5s;
     animation-name: fade;
     animation-iteration-count: infinite;
-    animation-duration: 6s;
+    animation-duration: 20s;
 }
 
 @-webkit-keyframes fade {
@@ -153,13 +153,62 @@ a, a:link, a:visited {
 }
 
 #f1 {
-    background-color: lightblue;
+    /*background-color: lightblue;*/
+    /*-webkit-animation-delay: -2s;*/
 }
 #f2 {
-    -webkit-animation-delay: -4s;
-    background-color: yellow;
+    /*-webkit-animation-delay: -8s;*/
+    /*background-color: yellow;*/
 }
 #f3 {
-    -webkit-animation-delay: -2s;
-    background-color: lightgreen;
+    /*-webkit-animation-delay: -4s;*/
+    /*background-color: lightgreen;*/
+}
+
+
+#cf {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+@keyframes cf4FadeInOut {
+  0% {
+    opacity:1;
+  }
+  17% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  92% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+#cf4a img:nth-of-type(1) {
+  animation-delay: 6s;
+}
+#cf4a img:nth-of-type(2) {
+  animation-delay: 4s;
+}
+#cf4a img:nth-of-type(3) {
+  animation-delay: 2s;
+}
+#cf4a img:nth-of-type(4) {
+  animation-delay: 0;
 }

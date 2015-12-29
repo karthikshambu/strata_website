@@ -9,7 +9,7 @@
 
 
 server '50.17.214.137', user: 'ubuntu', roles: %w{web app db}
-set :branch, "production"
+set :branch, "master"
 
 # role-based syntax
 # ==================

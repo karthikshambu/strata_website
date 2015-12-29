@@ -4,7 +4,7 @@ $(document).on('ready page:load', function () {
     if (current >= $imgs.length)
       current = 0;
     $imgs.eq(current++).fadeIn(function() {
-      $(this).fadeOut(nextImage);
+      $(this).delay(3000).fadeOut(nextImage);
     })
   }
   nextImage();
