@@ -12,7 +12,10 @@ gem 'capistrano-passenger'
 gem 'capistrano-rails'
 gem 'capistrano-rvm'
 gem 'sqlite3'
-
+group :production do
+  gem 'ruby-oci8'
+  gem 'activerecord-oracle_enhanced-adapter','1.5.5'
+end
 group :assets do
   gem 'sass-rails', '~> 4.0.2'
   gem 'coffee-rails', '~> 4.0.0'
