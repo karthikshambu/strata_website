@@ -105,6 +105,7 @@ GEM
       sass (~> 3.2.2)
       sprockets (~> 2.8, < 3.0)
       sprockets-rails (~> 2.0)
+    settingslogic (2.0.9)
     sidekiq (4.0.1)
       concurrent-ruby (~> 1.0)
       connection_pool (~> 2.2, >= 2.2.0)
@@ -155,6 +156,7 @@ DEPENDENCIES
   rails (= 4.0.10)
   ruby-oci8
   sass-rails (~> 4.0.2)
+  settingslogic
   sidekiq
   sqlite3
   therubyracer

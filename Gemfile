@@ -12,6 +12,7 @@ gem 'capistrano-passenger'
 gem 'capistrano-rails'
 gem 'capistrano-rvm'
 gem 'sqlite3'
+gem 'settingslogic'
 group :production do
   gem 'ruby-oci8'
   gem 'activerecord-oracle_enhanced-adapter','1.5.5'

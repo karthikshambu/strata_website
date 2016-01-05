@@ -10,7 +10,7 @@
         <meta name="author" content="">
         <link href='https://fonts.googleapis.com/css?family=Catamaran:400,300' rel='stylesheet' type='text/css'>
 
-        <title>Firstmyle</title>
+        <title>Strata</title>
         <%= stylesheet_link_tag    "application", :media => "all" %>
         <%= javascript_include_tag "application" %>
         <%= csrf_meta_tags %>
@@ -25,47 +25,34 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <%= link_to image_tag("logo.png", :border => 0, :class => "logo"), root_path %>
-            </div>
-          </div>
-        </nav>
-
-        <div class="container main-container">
-          <div class="row">
-            <div class="col-lg-2"></div>
-
-            <div class="col-lg-8">
-              <div class="row">
-                <div id="flash" class="col-lg-8">
-                  <center>
-                    <% unless flash.now[:notice].blank? %>
-                        <div class="alert alert-success"><%= flash.now[:notice] %></div>
-                    <% end %>
-                    <% unless flash.now[:error].blank? %>
-                        <div class="alert alert-danger"><%= flash.now[:error] %></div>
-                    <% end %>
-                  </center>
-                </div>
+      <%#= link_to image_tag("logo.png", :border => 0, :class => "logo"), root_path %>
+      <section class="cd-horizontal-timeline catamaran">
+          <%= yield %>
+          <div class="timeline">
+              <div class="events-wrapper">
+                  <div class="events arial-narrow">
+                      <ol>
+                          <li><a href="#0" data-date="16/01/2016" class="selected"><span class="centered" class="centered"><span class="triangle-down"></span>2016</span></a></li>
+                          <li><a href="#0" data-date="28/02/2015"><span class="centered">2015</span></a></li>
+                          <li><a href="#0" data-date="20/04/2014"><span class="centered">2014</span></a></li>
+                          <li><a href="#0" data-date="20/05/2013"><span class="centered">2013</span></a></li>
+                          <li><a href="#0" data-date="09/07/2012"><span class="centered">2012</span></a></li>
+                          <li><a href="#0" data-date="09/07/2011"><span class="centered">2011</span></a></li>
+                          <li><a href="#0" data-date="09/07/2010"><span class="centered">2010</span></a></li>
+                      </ol>
+                      <span class="filling-line" aria-hidden="true"></span>
+                  </div>
               </div>
-              <div class= "row">
-                <div class="col catamaran">
-                  <%= yield %>
-                </div>
-              </div>
-            </div>
 
-            <div class="col-lg-2"></div>
+              <ul class="cd-timeline-navigation">
+                  <li><a href="#0" class="prev inactive">Prev</a></li>
+                  <li><a href="#0" class="next">Next</a></li>
+              </ul>
           </div>
-        </div>
+      </section>
 
-
-        <!-- jQuery Version 1.11.1 -->
-        <script src="js/jquery.js"></script>
-
-        <!-- Bootstrap Core JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery-2.1.4.js"></script>
+      <script src="js/jquery.mobile.custom.min.js"></script>
+      <script src="js/main.js"></script> <!-- Resource jQuery -->
     </body>
 </html>

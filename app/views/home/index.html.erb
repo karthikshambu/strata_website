@@ -1,64 +1,104 @@
-<div class="row">
-  <div class = "col landscape">
-    <!-- <img src="image/lady.png" class="img-responsive" alt="" width = "40%"> -->
-    <%= link_to image_tag("orange-spoon.png", :border => 0, width: '100%'), "#" %>
-  </div>
-</div>
-<br />
+<div class="events-content">
+  <ol>
+    <li class="selected" data-date="16/01/2016">
+        <%= link_to image_tag("logo.svg", :border => 0, :class => "strata_sm_logo"), root_path %>
+        <div style="width:60%;margin-left:20%;" class="row">
+            <p>
+                Strata Retail & Technology Services Private Limited, a NSRCEL-IIM Bangalore Incubated company, was started by a team of Retail & Technology Professionals in 2009. The group has diversified interests in Books, Technology, Music and Tourism. JustBooksCLC, a retail community library chain, is the flagship brand of Strata and has 60+ branches spread across India. Our next offering is FirstMiler.
+            </p>
+        </div>
+        <div>
+          <%= link_to image_tag("jb.svg", :border => 0, :class => "sm_logo"), root_path %>
+          <%= link_to image_tag("ed.svg", :border => 0, :class => "sm_logo"), root_path %>
+          <%= link_to image_tag("bb.svg", :border => 0, :class => "sm_logo"), root_path %>
+          <%= link_to image_tag("logo_r3.png", :border => 0, :class => "sm_logo"), root_path %>
+          <%= link_to image_tag("fm.svg", :class => "sm_logo", :alt => "Firstmyle"), "http://www.firstmyle.com", :target => "_blank" %>
+        </div>
 
-<div class="row">
-  <div class="col-sm-5">
-    <div class="row">
-      <p style="font-size:21px;"><b>Neighbourhood in your palm.</p></b>
-      <p>
-        Yes, that is what Firstmyle sets out to deliver for you, using interesting stories from people around you about places near you.</p>
-        <p>Get to know about those local things that matter to you - announcements made by your civic administrators, a weekend event closer home, the new restaurant that no one has told you about yet, an important activity that is being planned by your community and lots more.</p>
-        <p><b>News, Events, Businesses, People</b> - the small world around you just got smaller and now fits into your palm.</p>
-    </div>
+    </li>
 
-    <div class="row">
-      <div class="col-sm-7">
-        <a href="https://play.google.com/store/apps/details?id=com.strata.firstmyle.consumer&hl=en" class="playstr"></a>
-      </div>
-    </div>
+    <li data-date="28/02/2015">
+        <div class="row">
+            <div class="col-sm-4">
+                <%= link_to image_tag("dummy.png", :border => 0, :width => "100%")%>
+            </div>
+            <div class="col-sm-6">
+                <p style="font-size:21px;"><b>Neighbourhood in your palm.</b></p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                </p>
+            </div>
+        </div>
+    </li>
 
-    <div class="row">
-      Give Your Email to Subscribe
-    </div>
+    <li data-date="20/04/2014">
+        <div class="row">
+            <div class="col-sm-4">
+                <%= link_to image_tag("dummy.png", :border => 0, :width => "100%")%>
+            </div>
+            <div class="col-sm-6">
+                <p style="font-size:21px;"><b>Neighbourhood in your palm.</b></p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                </p>
+            </div>
+        </div>
+    </li>
 
-    <div class="row">
-      <div class="send-app-link row">
-        <%= form_tag send_sms_home_index_path, :id => 'send_sms_form' do -%>
-          <div class="col-md-8 col-sm-6 col-xs-12">
-              <%#= text_field_tag 'phone_no', '', maxlength: 10, class: "invalid  num-elem phone-number" %>
-              <%= text_field_tag 'email', '', class: "invalid  num-elem phone-number" %>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-6 ">
-              <%= submit_tag "Submit", class: "btn secondary submit-number", style: "text-align:center;" %>
-          </div>
+    <li data-date="20/05/2013">
+        <div class="row">
+            <div class="col-sm-4">
+                <%= link_to image_tag("dummy.png", :border => 0, :width => "100%")%>
+            </div>
+            <div class="col-sm-6">
+                <p style="font-size:21px;"><b>Neighbourhood in your palm.</b></p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                </p>
+            </div>
+        </div>
+    </li>
 
-        <% end %>
-      </div>
-    </div>
-    <div class="row">
-      You can reach us at - <b>info@firstmyle.com</b>
-    </div>
-  </div>
+    <li data-date="09/07/2012">
+        <div class="row">
+            <div class="col-sm-4">
+                <%= link_to image_tag("dummy.png", :border => 0, :width => "100%")%>
+            </div>
+            <div class="col-sm-6">
+                <p style="font-size:21px;"><b>Neighbourhood in your palm.</b></p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                </p>
+            </div>
+        </div>
+    </li>
 
-  <div class="col-sm-2"></div>
-    <div class="col-sm-5" id="slideshow">
-      <%= link_to image_tag("mobile1.png", :border => 0, :width => "100%")%>
-      <%= link_to image_tag("mobile2.png", :border => 0, :width => "100%")%>
-      <%= link_to image_tag("mobile3.png", :border => 0, :width => "100%")%>
-    </div>
-    <!-- <div class="fadein col-sm-5">
-      <%= image_tag("mobile2.png", id: "f3", size: "450x800") %>
-      <%= image_tag("mob.png", id: "f2", size: "450x800") %>
-      <%= image_tag("mobile3.png", id: "f1", size: "450x800") %>
-    </div> -->
-</div>
+    <li data-date="09/07/2011">
+        <div class="row">
+            <div class="col-sm-4">
+                <%= link_to image_tag("dummy.png", :border => 0, :width => "100%")%>
+            </div>
+            <div class="col-sm-6">
+                <p style="font-size:21px;"><b>Neighbourhood in your palm.</b></p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                </p>
+            </div>
+        </div>
+    </li>
 
-
-
-
-
+    <li data-date="09/07/2010">
+        <div class="row">
+            <div class="col-sm-4">
+                <%= link_to image_tag("dummy.png", :border => 0, :width => "100%")%>
+            </div>
+            <div class="col-sm-6">
+                <p style="font-size:21px;"><b>Neighbourhood in your palm.</b></p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                </p>
+            </div>
+        </div>
+    </li>
+  </ol>
+</div> <!-- .events-content -->
